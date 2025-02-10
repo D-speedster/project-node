@@ -18,6 +18,6 @@ App.use('/Movies', movies)
 App.use('/Series', series)
 App.use('/admin', Admin)
 App.use('/', (req, res) => {
-    res.status(404).send('<h1><center>404 Not Found 😣</center></h1>')
+    res.status(404).send('<h1><center>404 Not Found 😣 |</center></h1>')
 })
 App.listen('3000');

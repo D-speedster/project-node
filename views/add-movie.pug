@@ -1,0 +1,53 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Add Post
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin="anonymous")
+script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
+
+.container
+ form
+  .form-group.row
+    label.col-sm-2.col-form-label(for="inputEmail3") Name
+    .col-sm-10
+      input.form-control#inputEmail3(type="text", placeholder="Name")
+  .form-group.row
+    label.col-sm-2.col-form-label(for="inputPassword3") Rate
+    .col-sm-10
+      input.form-control#inputPassword3(type="text", placeholder="Rate")
+  fieldset.form-group
+    .row
+      legend.col-form-label.col-sm-2.pt-0 Type
+      .col-sm-10
+        .form-check
+          input.form-check-input#gridRadios1(type="radio", name="gridRadios", value="option1", checked)
+          label.form-check-label(for="gridRadios1").
+            
+            Animation
+            
+        .form-check
+          input.form-check-input#gridRadios2(type="radio", name="gridRadios", value="option2")
+          label.form-check-label(for="gridRadios2").
+            
+            Movie
+            
+        .form-check.disabled
+          input.form-check-input#gridRadios3(type="radio", name="gridRadios", value="option3")
+          label.form-check-label(for="gridRadios3").
+            
+            Series
+            
+  .form-group.row
+    .col-sm-2 Enable ?
+    .col-sm-10
+      .form-check
+        input.form-check-input#gridCheck1(type="checkbox")
+        label.form-check-label(for="gridCheck1").
+          
+          YES
+          
+  .form-group.row
+    .col-sm-10
+      button.btn.btn-primary(type="submit") Sign in

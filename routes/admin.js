@@ -1,11 +1,9 @@
 let express = require('express');
 let router = express.Router();
-router.use('/', (req, res) => {
+let ADdmovie = require('./add-movie');
+
+router.get('/', (req, res) => {
     res.render('admin')
 })
-
-router.use('/add-movies', (req, res) => {
-    res.send('<h1>Create Movie</h1>')
-
-})
+router.use('/add-movies', ADdmovie)
 module.exports = router;
